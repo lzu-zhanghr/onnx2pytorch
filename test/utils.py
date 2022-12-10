@@ -108,6 +108,6 @@ def check_model(  # pylint: disable=missing-function-docstring,unused-argument
     torch_top1_acc, torch_top5_acc = torch_top1.compute(), torch_top5.compute()
 
     logger.info(
-        f"model:{model_name:8s}; onnx_top1_acc: {onnx_top1_acc:.6f}, onnx_top5_acc: {onnx_top5_acc:.6f}; torch_top1_acc: {torch_top1_acc:.6f}, torch_top5_acc: {torch_top5_acc:.6f}"
+        f"model:{model_name:12s}; onnx_top1_acc: {onnx_top1_acc:.6f}, onnx_top5_acc: {onnx_top5_acc:.6f}; torch_top1_acc: {torch_top1_acc:.6f}, torch_top5_acc: {torch_top5_acc:.6f}"
     )
     assert onnx_top1_acc == torch_top1_acc and onnx_top5_acc == torch_top5_acc

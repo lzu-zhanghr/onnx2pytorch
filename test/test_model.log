@@ -1,1 +1,0 @@
-2022-12-10 12:42:32.090 | INFO     | test.utils:check_model:106 - model:resnet18; onnx_acc: 0.697600; torch_acc: 0.697600
